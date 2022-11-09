@@ -8,6 +8,8 @@
  */
 package ejemplo1;
 
+import java.util.Locale; // Se importa para poder poner . en java
+import java.util.Scanner; // Se importa la clase Scanner
 /**
  *
  * @author reroes
@@ -16,13 +18,19 @@ public class Ejemplo2 {
 
     public static void main(String[] args) {
         // Condicionales simples
+        
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        
+        double promedio; //Se asigna el valor
+        System.out.println("ingrese la nota necesaria:"); //Se inmprime la pregunta
+        promedio = entrada.nextDouble(); // Se ingresa por teclado el valor
 
-        double promedio = 7.4;
-
-        if (promedio >= 7.5) { // Falso
+        if (promedio >= 7.5) { // Condicional simple 
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
-        } // -------------
+            
+        } //Si Falso no ejecuta nada
     }
 
 }

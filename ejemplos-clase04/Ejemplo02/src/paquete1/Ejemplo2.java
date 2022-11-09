@@ -30,11 +30,13 @@ public class Ejemplo2 {
         System.out.println("Ingrese nota de asignatura 1");
         notaAsignatura1 = entrada.nextDouble();
         System.out.println("Ingrese nombre de asignatura 2");
-        entrada.nextLine(); // limpieza de buffer
+        entrada.nextLine(); /* limpieza de buffer, para cambiar de un tipo a
+        otro, se pone despues del next el tipo de dato que se pondra enseguida
+        */
         nombreAsignatura2 = entrada.nextLine();
         System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
-        
+    
         System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n"
                 + "Nota 2: %.2f\n",
                 nombreAsignatura1,
